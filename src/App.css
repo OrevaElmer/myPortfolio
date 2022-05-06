@@ -1,38 +1,356 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  font-size: 51px;
+}
+.socialIcon img{
+  width: 50px;
+  padding-right: 15px;
+}
+#hero{
+  width: 100%;
+  display: flex;
+  height: 70vh;
+}
+.heroLeft{
+  width: 66.66666667%;
+  padding: 40px 40px 40px 60px;
+}
+
+.heroLeft .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  width: 91.66666667%;
+}
+
+.heroLeft .header .myLinks a{
+  text-decoration: none;
+  padding-right: 5%;
+  font-weight: bold;
+  color: rgb(233, 72, 72);
+}
+
+.heroLeft .myOverview-Container{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+.heroLeft .myOverview-Container .myOverview{
+  width: 70%;
+}
+.heroLeft .myOverview-Container p,
+.heroLeft .myOverview-Container h3{
+  color: rgb(233, 72, 72);
+}
+.heroLeft .myOverview-Container p{
+  padding: 10px 0;
+}
+.heroLeft .myOverview-Container h1{
+  line-height: 1em;
+  padding: 10px 0;
+}
+.heroLeft .myOverview-Container h3{
+  font-weight: bold;
+}
+.heroRight{
+  width: 33.33333333%;
+  background-color: aquamarine;
+}
+
+.heroRight .myPic {
+  width: 100%;
+  height: 70vh;
+}
+.heroRight .myPic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* about section start */
+#about{
+  width: 100%;
+  height: 400px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#about .aboutContent{
+  width: 33.33333333%;
+}
+#about .aboutContent p{
+  font-size: 24px;
+  padding: 10px 0px;
+  color: gray;
+}
+/* about section end */
+
+/* skill section start */
+#skill,
+#service{
+  padding: 40px 80px;
+}
+#skill p,
+#service p{
+  font-size: 24px;
+}
+#skill .skillsType,
+#service .serviceType{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+}
+#skill .individualSkill{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px 40px 0px;
+}
+#skill .individualSkill img{
+  margin-right: 20px;
+}
+/* skill section end */
+
+/* service section start */
+#service .individualService{
+  width: 33.33333333%;
+  padding: 0px 40px 40px 0px;
+}
+#service .individualService h3{
+  color: rgb(233, 72, 72);
+  padding-bottom: 10px;
+}
+#service .individualService p{
+  text-align: justify;
+  font-size: 20px;
+  color:gray;
+}
+.serviceType .individualService .individualServiceImg{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(197, 195, 195);
+  border-radius: 10px;
+}
+.serviceType .individualService .individualServiceImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+/* service section end */
+
+
+/* testimony section start */
+#testimony{
+  display: flex;
+  height: 550px;
+}
+#testimonyTitle{
+  width: 33.33333333%;
+  background-color: rgb(233, 72, 72);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#testimonyTitle h1{
+  font-size: 40px;
+  color: aliceblue;
+  padding: 40px;
+}
+#testimonyContent{
+  width: 66.66666667%;
+  background-color: blanchedalmond;
+  padding-top: 0px;
+}
+#testimony #testimonyContent .allTestimony{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px 20px 20px 20px;
+}
+.allTestimony .individualTestimony{
+  width: 50%;
+  padding:0px 40px 40px 40px;
+  text-align: center;
+}
+.allTestimony .individualTestimony h4{
+  padding: 10px 0;
+  color: rgb(233, 72, 72);
+}
+.allTestimony .individualTestimony p{
+  font-size: 18px;
+  color: gray;
+}
+.allTestimony .individualTestimonyImg{
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid pink;
+}
+.allTestimony .individualTestimonyImg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#footer{
+  width: 100%;
+  background-color: black;
+  color: rgb(167, 165, 165);
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2em;
+}
+#footer hr{
+  width: 50%;
+  margin: 10px 0;
+}
+#footer .socialIcon{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* testimony section end */
+@media (min-width: 992px){
+  h1{
+    font-size: 35px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #about .aboutContent{
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+  #testimonyTitle h1{
+    font-size: 30px;
+  }
+  .allTestimony .individualTestimony p{
+    font-size: 16px;
+  }
+  .allTestimony .individualTestimonyImg{
+    width: 100px;
+    height: 100px;
+  }
+  #testimony #testimonyContent .allTestimony {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+}
+
+@media (max-width: 767.98px) {
+  h1{
+    font-size: 25px;
+  }
+  #skill p, #service p {
+    font-size: 18px;
+    padding-top: 10px;
+}
+  .heroLeft {
+    padding: 40px 20px 20px 40px;
+  }
+  #skill, #service {
+    padding: 20px 40px;
+  }
+  #about {
+    height: 300px;
+  }
+  #about .aboutContent{
+    width: 75%;
+  }
+  #service .individualService p{
+    font-size: 15px;
+  }
+  #service .individualService{
+    width: 50%;
+  } 
+  .serviceType .individualService .individualServiceImg{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  #testimonyTitle h1 {
+    font-size: 20px;
+    color: aliceblue;
+    padding: 40px;
+  }
+  .allTestimony .individualTestimony {
+    width: 50%;
+    padding: 15px 10px 10px 5px;
+    text-align: center;
+  }
+  .allTestimony .individualTestimony p {
+    font-size: 14px;
+  }
+  .allTestimony .individualTestimonyImg {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 4px solid pink;
+}
+}
+@media (max-width: 575.98px) {
+  .heroLeft .myOverview-Container h3 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .heroLeft .header .myLinks a {
+    padding-right: 10px;
+    font-weight: 400;
+  }
+  .heroLeft .myOverview-Container .myOverview {
+    width: 100%;
+  }
+  .heroLeft .myOverview-Container h1 {
+    font-size: 25px;
+  }
+  .socialIcon img {
+    width: 35px;
+    padding-right: 10px;
+  }
+  .heroLeft {
+    width: 60%;
+}
+  .heroRight {
+    width: 40%;
+    background-color: aquamarine;
+  }
+  #about .aboutContent p {
+    font-size: 20px;
+  }
+  #skill .skillsType, #service .serviceType {
+    padding: 40px 0px 20px 0px;
+  }
+  .serviceType .individualService .individualServiceImg {
+    width: 50px;
+    height: 50px;
+  }
+  #service .individualService h3 {
+    font-size: 15px;
+  }
+  #testimonyTitle h1 {
+    font-size: 18px;
+    padding: 20px;
+  }
+  #testimony #testimonyContent .allTestimony {
+    padding: 10px 5px 5px 10px;
   }
 }
